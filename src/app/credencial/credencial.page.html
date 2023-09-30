@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Mi credencial
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="true" class="credencial-container">
+    <ion-card-header>
+      <ion-card-title>Mi Credencial</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Ingresa tu Dni para ver tu credencial
+      </p>
+      <ion-item>
+        <ion-input  [(ngModel)]="dni" label="DNI" type="number" placeholder="12345678"></ion-input>
+      </ion-item>
+      <ion-button (click)="makeApiRequest()">Ver Credencial</ion-button>
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>
