@@ -1,0 +1,7 @@
+{
+  "name": "ChallengeMicam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
