@@ -4,11 +4,11 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #083456;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-shade: #072e4c;
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
@@ -153,7 +153,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #001d2e;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
@@ -181,7 +181,7 @@
 
     --ion-item-background: #000000;
 
-    --ion-card-background: #1c1c1d;
+    --ion-card-background: #3f3f3f;
   }
 
   .ios ion-modal {

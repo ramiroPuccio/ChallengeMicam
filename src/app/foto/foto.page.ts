@@ -16,8 +16,8 @@ export class FotoPage {
 
   ngOnInit() {
   }
-  addPhotoToGallery() {
-    this.fotosService.addNewToGallery();
+  addPhotoToGallery(from:string) {
+    this.fotosService.addNewToGallery(from);
   }
 
 }

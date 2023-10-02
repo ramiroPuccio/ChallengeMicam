@@ -11,11 +11,33 @@ export class FotosService {
   constructor() { 
     
   }
-  public async addNewToGallery() {
-    // Take a photo
+  public async addNewToGallery(from:string) {
+    if(from == "camara"){
+      const capturedPhoto = await Camera.getPhoto({
+        resultType: CameraResultType.Uri,
+        source: CameraSource.Camera,
+        quality: 100
+      });
+      this.photos.unshift({
+        filepath: "soon...",
+        webviewPath: capturedPhoto.webPath!
+      });  
+    } else {
+      const capturedPhoto = await Camera.getPhoto({
+      resultType: CameraResultType.Uri,
+      source: CameraSource.Photos,
+      quality: 100
+    });
+    this.photos.unshift({
+      filepath: "soon...",
+      webviewPath: capturedPhoto.webPath!
+    });  
+  }
+  }
+  public async capturarFoto() {
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
-      source: CameraSource.Camera,
+      source: CameraSource.Photos,
       quality: 100
     });
   this.photos.unshift({
